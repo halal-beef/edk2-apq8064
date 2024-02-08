@@ -45,4 +45,4 @@ jobs:
        name: emmc_appsboot.mbn
        path: |
          /home/runner/work/EDK2WorkDir/emmc_appsboot.mbn
-         /home/runner/work/EDK2WorkDir/MSM8960_EFI.fd
+         /home/runner/work/EDK2WorkDir/edk2/Build/Lumia535-ARM/DEBUG_GCC5/FV/MSM8960_EFI.fd

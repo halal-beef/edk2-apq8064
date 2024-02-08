@@ -1,0 +1,56 @@
+Build environment: Linux-6.7.3-arch1-2-x86_64-with-glibc2.39
+Build start time: 18:26:21, Feb.08 2024
+
+WORKSPACE        = /home/l/edk2
+EDK_TOOLS_PATH   = /home/l/edk2/BaseTools
+CONF_PATH        = /home/l/edk2/Conf
+PYTHON_COMMAND   = /usr/bin/python3
+
+
+Architecture(s)  = ARM
+Build target     = DEBUG
+Toolchain        = GCC5
+
+Active Platform          = /home/l/edk2/Lumia535Pkg/Lumia535.dsc
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetI2C/MsmTargetI2C.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetLib/MsmTargetLib.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetGpioLib/MsmTargetGpioLib.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetClockLib/MsmTargetClockLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/MsmTargetMmcLib.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmClockLib/MsmClockLib.inf [ARM]
+Building ... /home/l/edk2/Lumia535Pkg/Library/MsmTargetTimerLib/MsmTargetTimerLib.inf [ARM]
+Building ... /home/l/edk2/ArmPkg/Library/ArmGenericTimerPhyCounterLib/ArmGenericTimerPhyCounterLib.inf [ARM]
+/home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/mmc.c: In function ‘mmc_boot_decode_and_save_cid’:
+/home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/mmc.c:428:3: error: left shift count >= width of type [-Werror]
+   mmc_cid.psn = UNPACK_BITS(raw_cid, 24, 32, mmc_sizeof);
+   ^
+/home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/mmc.c:445:3: error: left shift count >= width of type [-Werror]
+   mmc_cid.psn = UNPACK_BITS(raw_cid, 16, 32, mmc_sizeof);
+   ^
+Building ... /home/l/edk2/MdePkg/Library/DxeHobLib/DxeHobLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiLib/UefiLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiBootServicesTableLib/UefiBootServicesTableLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf [ARM]
+Building ... /home/l/edk2/MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf [ARM]
+/home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/mmc.c: At top level:
+cc1: error: unrecognized command line option "-Wno-shift-count-overflow" [-Werror]
+cc1: error: unrecognized command line option "-Wno-unused-const-variable" [-Werror]
+cc1: all warnings being treated as errors
+make: *** [GNUmakefile:309: /home/l/edk2/Build/Lumia535-ARM/DEBUG_GCC5/ARM/Lumia535Pkg/Library/MsmTargetMmcLib/MsmTargetMmcLib/OUTPUT/mmc.obj] Error 1
+
+
+build.py...
+ : error 7000: Failed to execute command
+	make -s tbuild [/home/l/edk2/Build/Lumia535-ARM/DEBUG_GCC5/ARM/Lumia535Pkg/Library/MsmTargetMmcLib/MsmTargetMmcLib]
+
+
+build.py...
+ : error F002: Failed to build module
+	/home/l/edk2/Lumia535Pkg/Library/MsmTargetMmcLib/MsmTargetMmcLib.inf [ARM, GCC5, DEBUG]
+
+- Failed -
+Build end time: 18:26:24, Feb.08 2024
+Build total time: 00:00:04
+

@@ -17,12 +17,12 @@
 
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x80400000|UINT32|0x30
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|480|UINT32|0x31
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|800|UINT32|0x32
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x33
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|540|UINT32|0x34
-  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|960|UINT32|0x35
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x87E00000|UINT32|0x30
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x31
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920|UINT32|0x32
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|24|UINT32|0x33
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x34
+  gLumia535PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|1920|UINT32|0x35
   gArmPlatformTokenSpaceGuid.PcdSystemMemoryUefiRegionSize|0x81700000|UINT32|0x00000036 #0x00800000
   #gArmPlatformTokenSpaceGuid.PcdCPUCoresStackBase|0x80C00000|UINT64|0x00000037
   gArmPlatformTokenSpaceGuid.PcdCPUCorePrimaryStackSize|0x20000|UINT32|0x00000038
